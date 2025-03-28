@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #222;
+        }
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #ff5722;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #e64a19;
+        }
+        .section-title {
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div>
+            <h1>Siddhi Sagar Parab</h1>
+            <p>Welcome to My website</p>
+            <p>Web Developer | Designer | Freelancer</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+        </div>
+    </header>
+    
+    <section id="about" class="container my-5">
+        <h2 class="section-title">About Me</h2>
+        <p>Passionate web developer with expertise in modern web technologies...</p>
+    </section>
+    
+    <section id="skills" class="container my-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 80%">HTML & CSS</div>
+           
+        </div>
+        <p>Programming Languages: Python, JavaScript, Java, C++, C etc.
+
+            Web Development: HTML, CSS, JavaScript</p>
+
+        <p>Communication: Verbal, Written, Presentation Skills</p>
+    </section>
+    
+    <section id="projects" class="container my-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="card">
+            <img src="images1.jpg" class="card-img-top" alt="image">
+            <div class="card-body">
+                <h5 class="card-title"> Personal Portfolio Website</h5>
+                <p class="card-text">Information
+                    Features:
+                    Bio section
+                    Skills showcase
+                    Project portfolio gallery
+                    Technologies:
+                    HTML for structure
+                    CSS for styling.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container my-5">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Siddhi Parab | Follow me on <a href="#" style="color: #ff5722;">LinkedIn</a></p>
+    </footer>
+
+    <p><b>Thank You!!</b></p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
